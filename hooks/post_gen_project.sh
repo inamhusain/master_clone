@@ -29,4 +29,4 @@ initialize_git
 connect_git_repo
 {% endif %}
 git config core.hooksPath .githooks/
-attempt_to_launch_studio
+# attempt_to_launch_studio
