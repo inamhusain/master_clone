@@ -12,11 +12,15 @@ dependencies:
   flutter:
     sdk: flutter
   provider: ^6.0.5 
+  envied: ^0.3.0+3
 
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  envied_generator: ^0.3.0+3
+  build_runner: ^2.4.6
+
 
 flutter:
   uses-material-design: true

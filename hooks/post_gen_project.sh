@@ -22,7 +22,6 @@ flutter pub get
 flutter pub add envied
 flutter pub add --dev envied_generator
 flutter pub add --dev build_runner
-
 dart pub run build_runner build --delete-conflicting-outputs
 cd ios/
 pod install
