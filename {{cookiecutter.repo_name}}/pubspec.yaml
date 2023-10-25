@@ -1,4 +1,4 @@
-name: {{cookiecutter.repo_name}}
+name: lg
 description: A new Flutter application.
 
 publish_to: 'none'
@@ -11,15 +11,17 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  provider:  
-  # connectivity_plus:  
+  provider: ^6.0.5
+  envied: ^0.3.0+3
 
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
  
-  build_runner:  
+  build_runner:  ^2.4.6
+  envied_generator: ^0.3.0+3
+
  
 
 flutter:

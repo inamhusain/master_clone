@@ -75,5 +75,5 @@ android/fastlane/metadata
 **/pubspec.lock
 **/*.mobileprovision
 
-# .env.development
-# .env.production
+.env.development
+.env.production
