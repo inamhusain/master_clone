@@ -28,9 +28,44 @@ flutter:
   assets:
     - .env.development
     - .env.production
+    - assets/images/
+    - assets/fonts/
+    - assets/colors/
+    - assets/lottie/
     # - assets/images/
 
 # flutter_gen:
 #   integrations:
 #     flutter_svg: true
 
+
+
+flutter_gen:
+  output: lib/config/assets/ # Optional (default: lib/gen/)
+  line_length: 80   # Optional (default: 80)
+
+  integrations:
+    flutter_svg: true
+    flare_flutter: true
+    rive: true
+    lottie: true
+
+  assets:
+    enabled: true
+
+    outputs:
+      class_name: AppAssets
+      package_parameter_enabled: false
+      style: dot-delimiter
+
+  fonts:
+    enabled: true
+    outputs:
+      class_name: AppFonts
+
+  colors:
+    enabled: true
+    outputs:
+      class_name: AppColors
+    inputs:
+      - assets/colors/colors.xml
