@@ -4,7 +4,7 @@
   "bundle_identifier": "com.webelight.app",
   "sentry_dsn_key": "NA",
   "minimum_android_sdk_version": 21,
-  "minimum_iOS_sdk_version": 12,
+  "minimum_iOS_sdk_version": 11,
   "target_ios_device": [
     "iPhone/iPod touch",
     "iPad",
@@ -22,6 +22,5 @@
     "*gradlew.bat"
   ],
   "base_url": "https://simform.com",
-  "is_theme_enable": true,
   "_app_class_name": ""
 }

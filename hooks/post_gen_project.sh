@@ -56,13 +56,13 @@ update_project_permissions() {
 #     fi                                                                      
 # }
 
-check_theme_flag() {
-  # Remove theme related file if theme is not enabled
-  if [ "{{ cookiecutter.is_theme_enable }}" = False ]; then
-     rm -f "lib/values/app_theme.dart"
-     rm -f "lib/values/app_theme_store.dart"
-  fi
-}
+# check_theme_flag() {
+#   # Remove theme related file if theme is not enabled
+#   if [ "{{ cookiecutter.is_theme_enable }}" = False ]; then
+#      rm -f "lib/values/app_theme.dart"
+#      rm -f "lib/values/app_theme_store.dart"
+#   fi
+# }
 
 update_project_permissions
 check_theme_flag
