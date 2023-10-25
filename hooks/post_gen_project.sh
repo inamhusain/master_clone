@@ -28,6 +28,7 @@ flutter clean
 flutter pub get
 # flutter pub global activate flutter_gen
 dart pub run build_runner build --delete-conflicting-outputs
+configure_flutter_gen
 cd ios/
 pod install
 cd ..
