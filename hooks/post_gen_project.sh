@@ -1,20 +1,20 @@
 #!/bin/bash
 
-fetch_splash_image() {
-  fileName=$(basename "{{ cookiecutter.splash_image_path }}")
-  fileExtension=".${fileName##*.}"
+# fetch_splash_image() {
+#   fileName=$(basename "{{ cookiecutter.splash_image_path }}")
+#   fileExtension=".${fileName##*.}"
 
-  mkdir -p 'assets/images'
+#   mkdir -p 'assets/images'
 
-  mv -f {{ cookiecutter.splash_image_path }} "assets/images/splash$fileExtension"
+#   mv -f {{ cookiecutter.splash_image_path }} "assets/images/splash$fileExtension"
 
-  # Check if the moved was successful
-  if [ $? -eq 0 ]; then
-      echo "File moved successfully."
-  else
-      echo "Error while moving the file."
-  fi
-}
+#   # Check if the moved was successful
+#   if [ $? -eq 0 ]; then
+#       echo "File moved successfully."
+#   else
+#       echo "Error while moving the file."
+#   fi
+# }
 
 initialize_git() {
     git init

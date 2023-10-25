@@ -60,17 +60,17 @@ if repo_link != 'NA' and not re.search(REPO_LINK_REGEX, repo_link):
 
 print(CGREEN + 'Proceeding with app name: {}, package name: {}'.format(app_name, package_name) + CEND)
 
-splash_image_path = '{{ cookiecutter.splash_image_path }}'
+# splash_image_path = '{{ cookiecutter.splash_image_path }}'
 
-if splash_image_path == 'Required':
-    print(CRED + '\n Splash image is required to create project \n' + CEND)
-    # Exits with status 1 to indicate failure
-    sys.exit(1)
-else:
-    if not os.path.exists(splash_image_path):
-        print(CRED + '\n Provided image path does not exists \n' + CEND)
-        sys.exit(1)
-    fileType = os.path.splitext(splash_image_path)[-1].lower()
-    if not (fileType == '.jpeg' or fileType == '.jpg' or fileType == '.png'):
-        print(CRED + '\n Please provide valid image file \n' + CEND)
-        sys.exit(1)
+# if splash_image_path == 'Required':
+#     print(CRED + '\n Splash image is required to create project \n' + CEND)
+#     # Exits with status 1 to indicate failure
+#     sys.exit(1)
+# else:
+#     if not os.path.exists(splash_image_path):
+#         print(CRED + '\n Provided image path does not exists \n' + CEND)
+#         sys.exit(1)
+#     fileType = os.path.splitext(splash_image_path)[-1].lower()
+#     if not (fileType == '.jpeg' or fileType == '.jpg' or fileType == '.png'):
+#         print(CRED + '\n Please provide valid image file \n' + CEND)
+#         sys.exit(1)
