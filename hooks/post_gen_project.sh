@@ -14,6 +14,14 @@ update_project_permissions() {
     cd "{{ cookiecutter.repo_name }}"
 }
 
+configure_flutter_gen(){
+
+    flutter pub add --dev flutter_gen_runner
+    dart pub global activate flutter_gen
+    fluttergen -c  pubspec.yaml
+
+}
+
 update_project_permissions
 # check_theme_flag
 flutter clean
