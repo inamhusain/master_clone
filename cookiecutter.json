@@ -4,7 +4,8 @@
   "bundle_identifier": "com.webelight.app",
   "sentry_dsn_key": "NA",
   "minimum_android_sdk_version": 21,
-  "minimum_iOS_sdk_version": 11,
+  "minimum_iOS_sdk_version": 12,
+  "target_sdk_version": 34,
   "target_ios_device": [
     "iPhone/iPod touch",
     "iPad",

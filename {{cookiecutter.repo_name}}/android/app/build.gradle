@@ -41,7 +41,7 @@ android {
         // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
         applicationId "{{cookiecutter.bundle_identifier}}"
         minSdkVersion {{cookiecutter.minimum_android_sdk_version}}
-        targetSdkVersion 33
+        targetSdkVersion {{cookiecutter.target_sdk_version}}
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
     }
