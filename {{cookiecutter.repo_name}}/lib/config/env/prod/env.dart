@@ -4,6 +4,6 @@ part 'env.g.dart';
 
 @Envied(path: '.env.production')
 abstract class Env {
-  @EnviedField(varName: 'KEY1', obfuscate: false)
+  @EnviedField(varName: 'BASE_URL', obfuscate: false)
   static const baseUrl = _Env.baseUrl;
 }
