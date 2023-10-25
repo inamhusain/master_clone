@@ -16,6 +16,7 @@ update_project_permissions() {
 
 update_project_permissions
 # check_theme_flag
+flutter clean
 flutter pub get
 # flutter pub global activate flutter_gen
 dart run build_runner build --delete-conflicting-outputs
