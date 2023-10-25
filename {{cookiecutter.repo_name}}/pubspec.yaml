@@ -28,7 +28,7 @@ flutter:
   # assets:
     # - assets/images/
 
-flutter_gen:
-  integrations:
-    flutter_svg: true
+# flutter_gen:
+#   integrations:
+#     flutter_svg: true
 
