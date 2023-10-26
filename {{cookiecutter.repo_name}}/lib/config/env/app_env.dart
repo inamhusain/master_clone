@@ -14,4 +14,5 @@ class AppEnv {
   }
 
   static String sentryUrl = _isDev ? EnvDev.sentryUrl : EnvProd.sentryUrl;
+  static String baseUrl = _isDev ? EnvDev.baseUrl : EnvProd.baseUrl;
 }
