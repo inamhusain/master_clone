@@ -4,6 +4,7 @@ import 'package:flutter/services.dart';
 // Package imports:
 import 'package:master_utility/master_utility.dart';
 import 'package:{{cookiecutter.repo_name}}/config/assets/colors.gen.dart';
+import 'package:{{cookiecutter.repo_name}}/config/env/app_env.dart';
 import 'package:{{cookiecutter.repo_name}}/config/sentry/sentry.dart';
 import 'package:{{cookiecutter.repo_name}}/constants/pref_keys.dart';
 import 'package:{{cookiecutter.repo_name}}/main.dart';
@@ -11,9 +12,12 @@ import 'package:{{cookiecutter.repo_name}}/main.dart';
 enum Environment { dev, prod }
 
 class AppConfig {
+  Environment? appEnvironment;
   Future<void> setAppConfig({required Environment environment}) async {
+    appEnvironment = environment;
     await _initializeApp(environment: environment);
     await PreferenceServiceHelper().setStringPrefValue(key: PreferenceKeys.environment, value: environment.name);
+    AppEnv().getAppEnvironment();
     await InitSentry().runAppWithSentry(buildProvidersTree(), environment: environment);
   }
 

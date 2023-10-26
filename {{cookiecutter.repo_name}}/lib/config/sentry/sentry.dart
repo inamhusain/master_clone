@@ -8,7 +8,6 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:sentry_flutter/sentry_flutter.dart';
 // Project imports:
-// import 'package:slot_booking/config/env/env.dart';
 import 'package:{{cookiecutter.repo_name}}/config/flavours/app.dart';
 
 class InitSentry {
