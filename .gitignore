@@ -13,7 +13,7 @@
 *.iml
 *.ipr
 *.iws
-.idea/*
+# .idea/*
 **/.idea/*
 !.idea/fileTemplates/
 
@@ -24,7 +24,7 @@
 
 # Flutter/Dart/Pub related
 **/doc/api/
-.dart_tool/
+# .dart_tool/
 .flutter-plugins
 .flutter-plugins-dependencies
 .packages
