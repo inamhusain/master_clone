@@ -14,6 +14,13 @@ dependencies:
   provider: ^6.0.5 
   envied: ^0.3.0+3
 
+  master_utility :
+    # path: packages/master_utility_flutter 
+    git:
+      url: https://x-access-token:glpat-zsCVmCYyPnEFKorRodz6@gitlab.webelight.co.in/webelight/master_utility_flutter.git
+      ref: dev
+
+
 
 dev_dependencies:
   flutter_test:
