@@ -3,7 +3,7 @@ import 'package:envied/envied.dart';
 part 'env.g.dart';
 
 @Envied(path: '.env.development')
-abstract class Env {
+abstract class EnvDev {
   @EnviedField(varName: 'BASE_URL', obfuscate: false)
-  static String baseUrl = _Env.baseUrl;
+  static String baseUrl = _EnvDev.baseUrl;
 }
