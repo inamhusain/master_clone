@@ -1,12 +1,14 @@
 // Flutter imports:
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:{{cookiecutter.repo_name}}/constants/pref_keys.dart';
 // Package imports:
 import 'package:master_utility/master_utility.dart';
 import 'package:{{cookiecutter.repo_name}}/config/assets/colors.gen.dart';
+import 'package:{{cookiecutter.repo_name}}/config/sentry/sentry.dart';
+import 'package:{{cookiecutter.repo_name}}/constants/pref_keys.dart';
+import 'package:{{cookiecutter.repo_name}}/main.dart';
 
-enum Environment { adminDev, adminProd, userDev, userProd }
+enum Environment { dev, prod }
 
 class AppConfig {
   Future<void> setAppConfig({required Environment environment}) async {
