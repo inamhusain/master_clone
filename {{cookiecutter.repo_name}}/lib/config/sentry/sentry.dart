@@ -7,17 +7,14 @@ import 'package:flutter/material.dart';
 // Package imports:
 import 'package:provider/provider.dart';
 import 'package:sentry_flutter/sentry_flutter.dart';
+import 'package:{{cookiecutter.repo_name}}/config/env/app_env.dart';
 // Project imports:
 import 'package:{{cookiecutter.repo_name}}/config/flavours/app.dart';
 
 class InitSentry {
   Future<void> runAppWithSentry(MultiProvider widget, {required Environment environment}) async {
-    String sentryDSN = '';
-    if (environment == Environment.dev) {
-      sentryDSN = EnvConfig().sentryURLAdmin;
-    } else {
-      sentryDSN = EnvConfig().sentryURLUser;
-    }
+    String sentryDSN = AppEnv.sentryUrl;
+
     kReleaseMode
         ? runZonedGuarded(() async {
             await SentryFlutter.init(

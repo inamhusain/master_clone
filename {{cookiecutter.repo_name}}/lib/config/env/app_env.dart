@@ -1,16 +1,17 @@
 import 'package:{{cookiecutter.repo_name}}/config/env/dev/env.dart';
+import 'package:{{cookiecutter.repo_name}}/config/env/prod/env.dart';
+import 'package:{{cookiecutter.repo_name}}/config/flavours/app.dart';
 import 'package:{{cookiecutter.repo_name}}/config/flavours/app.dart';
 import 'package:{{cookiecutter.repo_name}}/config/flavours/app.dart';
 
 class AppEnv {
-  String? _env;
-  EnvDev? env;
+  static String? _env = "";
+  static bool _isDev = true;
+
   void getAppEnvironment() async {
     _env = await AppConfig().getEnvironment();
-    // if(_env == Environment.dev.name){
-    //   env ==
-    // }else{}
+    _isDev = _env == Environment.dev.name;
   }
 
-  // static const String sentryUrl
+  static String sentryUrl = _isDev ? EnvDev.sentryUrl : EnvProd.sentryUrl;
 }
