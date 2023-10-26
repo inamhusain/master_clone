@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:ls/constants/app_providers.dart';
-import 'package:ls/constants/theme.dart';
 import 'package:master_utility/master_utility.dart';
 import 'package:provider/provider.dart';
 import 'package:pull_to_refresh/pull_to_refresh.dart';
 import 'package:sentry_flutter/sentry_flutter.dart';
+import 'package:{{cookiecutter.repo_name}}/constants/app_providers.dart';
+import 'package:{{cookiecutter.repo_name}}/constants/theme.dart';
+import 'package:{{cookiecutter.repo_name}}/views/splash/splash_screen.dart';
 
 MultiProvider buildProvidersTree() {
   return MultiProvider(
