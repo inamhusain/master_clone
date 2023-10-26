@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:master_utility/master_utility.dart';
 import 'package:provider/provider.dart';
 import 'package:{{cookiecutter.repo_name}}/config/assets/colors.gen.dart';
+import 'package:{{cookiecutter.repo_name}}/providers/splash_provider.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
