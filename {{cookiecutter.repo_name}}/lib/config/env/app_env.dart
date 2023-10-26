@@ -1,7 +1,7 @@
-import 'package:ls/config/flavours/app.dart';
+import 'package:{{cookiecutter.repo_name}}/config/flavours/app.dart';
 
 class AppEnv {
-  String _env;
+  String? _env;
   void getAppEnvironment() async {
     _env = await AppConfig().getEnvironment();
   }
