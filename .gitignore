@@ -13,7 +13,11 @@
 *.iml
 *.ipr
 *.iws
+<<<<<<< HEAD
 .idea/*
+=======
+# .idea/*
+>>>>>>> parent of aeb5329 (latest)
 **/.idea/*
 !.idea/fileTemplates/
 
@@ -24,7 +28,11 @@
 
 # Flutter/Dart/Pub related
 **/doc/api/
+<<<<<<< HEAD
 .dart_tool/
+=======
+# .dart_tool/
+>>>>>>> parent of aeb5329 (latest)
 .flutter-plugins
 .flutter-plugins-dependencies
 .packages
