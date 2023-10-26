@@ -2,7 +2,6 @@
 import 'package:flutter/material.dart';
 // Project imports:
 import 'package:{{cookiecutter.repo_name}}/config/assets/colors.gen.dart';
-// import 'package:{{cookiecutter.repo_name}}/config/assets/fonts.gen.dart';
 
 class AppTheme {
   static final ThemeData lightTheme = ThemeData(
